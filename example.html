@@ -1,8 +1,8 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
 <input type="checkbox" name="check1" value="checkbox" onchange="showMe('div1')" checked> Gizle</a>
-<input type="checkbox" name="check1" value="checkbox" onchange="showMe2('div2')" checked> Gizle</a>
-<input type="checkbox" name="check1" value="checkbox" onchange="showMe3('div3')" checked> Gizle</a>
+<input type="checkbox" name="check1" value="checkbox" onchange="showMe('div2')" checked> Gizle</a>
+<input type="checkbox" name="check1" value="checkbox" onchange="showMe('div3')" checked> Gizle</a>
   
 <div id="div1" style="">icerik 1
 </div>
@@ -17,7 +17,7 @@
   <script type="text/javascript">
 <!--
    function showMe (box) { /* onchange Showme*/
- var chboxs = document.getElementById("div1").style.display;  /* DİV */
+ var chboxs = document.getElementById(box).style.display;  /* DİV */
  
     var vis = "none";
         if(chboxs=="block"){
@@ -27,28 +27,6 @@
     document.getElementById(box).style.display = vis;
 }
 
-   function showMe2 (box) { /* onchange Showme2*/
- var chboxs = document.getElementById("div2").style.display;  /* DİV */
- 
-    var vis = "none";
-        if(chboxs=="block"){
-         vis = "none"; }
-        if(chboxs=="none"){
-         vis = "block"; }
-    document.getElementById(box).style.display = vis;
-}
-
-
-   function showMe3 (box) {  /* onchange Showme3*/
- var chboxs = document.getElementById("div3").style.display; /* DİV */
- 
-    var vis = "none";
-        if(chboxs=="block"){
-         vis = "none"; }
-        if(chboxs=="none"){
-         vis = "block"; }
-    document.getElementById(box).style.display = vis;
-}
 
   //-->
 </script>
